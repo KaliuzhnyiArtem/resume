@@ -1,0 +1,395 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+
+
+.mainpage{
+  width: 100%;
+}
+
+
+.conteiner{
+  height: fit-content;
+  width:80%;
+  margin: 0px auto; 
+}
+
+.contents {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  display: flex;
+  width: 100%;
+}
+
+.foto {
+  background: rgb(247,247,247);
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.myfoto{
+  margin-top: 20px;
+  border-radius: 100%;
+  max-width: 60%;
+}
+
+.mydate{
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.mydateconteiner{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: fit-content;
+
+}
+.myname{
+  height: 60%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.myname p{
+  font-size: 30px;
+}
+.prof_soth{
+  width: 100%;
+  display: flex;
+  height: 20%;
+}
+
+.profesion{
+  width: 75%;
+}
+
+.social_media{
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.allinfo{
+  border-top: 1px solid black;
+  height: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.git a{
+  text-decoration: none;
+}
+
+.fotosocial{
+  width: 25px;
+  height: 25px;
+  margin-left: 7px;
+  margin-top: 10px;
+}
+
+
+.intro{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+
+}
+
+
+.titleintro {
+  background: rgb(247,247,247);
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteiner_intro {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_intro{
+  margin-top: 30px;
+  width: 90%;
+  height: fit-content;%;
+}
+
+
+.stack {
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.titlestack {
+  background: rgb(247,247,247);
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteiner_stack {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.technology {
+  margin-top: 20px;
+  border-top: 1px solid black;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.porfolio{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.titleportfolio{
+  background: rgb(247,247,247);
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteiner_project{
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects {
+  border-top: 1px solid black;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pj{
+  margin-top: 5%;
+  width: 30%;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.res_foto{
+  border: 0.1px solid grey;
+}
+
+.pj p{
+  margin: 0px auto;
+  margin-top: 2px;
+}
+
+.pj p a{
+  text-decoration: none;
+}
+
+.pj img{
+  height: 200px;
+  border: 0.1px solid grey;
+  border-radius: 3%;
+}
+
+.footer{
+  margin-top: 30px;
+  border-top: 0.5px solid grey;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer p{
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
